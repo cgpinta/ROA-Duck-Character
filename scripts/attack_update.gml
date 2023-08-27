@@ -15,7 +15,7 @@ if (attack == AT_DSTRONG){
 }
 
 if (attack == AT_NSPECIAL){
-    if (window == 1 && window_timer == 1)
+    if (window == 1 && window_timer == 1) // WARN: Possible repetition during hitpause. Consider using window_time_is(frame) https://rivalslib.com/assistant/function_library/attacks/window_time_is.html
         ate_player_bamboo = false;
     if (window == 2){
         // this code moves the player toward the 2nd hitbox, guaranteeing that it hits
@@ -156,7 +156,7 @@ if (attack == AT_USPECIAL){
             with (asset_get("pHitBox")){
                 if (player == other.player && select == other.select && attack == AT_USPECIAL
                 && ((point_distance(x,y,other.x,other.y-other.char_height*.5) < 450 && y < other.y+32)
-                || (x > view_get_xview() - 32 && x < view_get_xview() + view_get_wview() + 32 && y < view_get_yview() + view_get_hview()))){
+                || (x > view_get_xview() - 32 && x < view_get_xview() + view_get_wview() + 32 && y < view_get_yview() + view_get_hview()))){ // WARN: Possible Desync. Consider using get_instance_y(asset_get("camera_obj")). // WARN: Possible Desync. Consider using get_instance_x(asset_get("camera_obj")).
                     other.bamboo = id;
                     break;
                 }
@@ -292,3 +292,12 @@ if (attack == AT_DSPECIAL_AIR){
         move_cooldown[AT_DSPECIAL_AIR] = 60;
     }
 }
+
+// #region vvv LIBRARY DEFINES AND MACROS vvv
+// DANGER File below this point will be overwritten! Generated defines and macros below.
+// Write NO-INJECT in a comment above this area to disable injection.
+#define window_time_is(frame) // Version 0
+    // Returns if the current window_timer matches the frame AND the attack is not in hitpause
+    return window_timer == frame and !hitpause
+// DANGER: Write your code ABOVE the LIBRARY DEFINES AND MACROS header or it will be overwritten!
+// #endregion

@@ -1,0 +1,11 @@
+2023-08-27 11:20:57.740 | INFO     | rivals_workshop_assistant.custom_logging:log_startup_context:33 - Assistant Version: 1.3.1
+2023-08-27 11:20:57.740 | INFO     | rivals_workshop_assistant.custom_logging:log_startup_context:35 - Exe dir: c:\Users\Christian\.vscode\extensions\rivals-lib.rivals-workshop-assistant-1.3.1\out
+2023-08-27 11:20:57.740 | INFO     | rivals_workshop_assistant.custom_logging:log_startup_context:36 - Root dir: c:\Users\Christian\AppData\Local\RivalsofAether\workshop\duckgame duck
+2023-08-27 11:20:57.740 | INFO     | rivals_workshop_assistant.custom_logging:log_startup_context:37 - Mode: SCRIPTS
+2023-08-27 11:20:57.741 | INFO     | rivals_workshop_assistant.info_files:read:15 - File not found, and being treated as empty: c:\Users\Christian\AppData\Local\RivalsofAether\workshop\duckgame duck\assistant\.assistant
+2023-08-27 11:20:57.744 | INFO     | rivals_workshop_assistant.run_context:make_run_context_from_paths:33 - Dotfile is {}
+2023-08-27 11:20:57.745 | INFO     | rivals_workshop_assistant.run_context:make_run_context_from_paths:34 - assistant config is {'aseprite_path': None, 'anim_tag_color': 'blue', 'window_tag_color': 'red', 'generate_hurtboxes': True, 'library_update_level': 'patch', 'assistant_should_self_update': True, 'warnings': ['desync_object_var_set_in_draw_script', 'desync_unsafe_camera_read', 'check_window_timer_without_check_hitpause', 'recursive_set_attack'], 'is_ssl': False}
+2023-08-27 11:20:57.745 | INFO     | rivals_workshop_assistant.run_context:make_run_context_from_paths:35 - character config is {'DEFAULT': <Section: DEFAULT>, 'general': <Section: general>}
+2023-08-27 11:20:58.239 | INFO     | rivals_workshop_assistant.updating:install_release:225 - Updating assistant to version: 1.3.1
+2023-08-27 11:20:59.875 | DEBUG    | rivals_workshop_assistant.file_handling:create_file:14 - Creating new file: c:\Users\Christian\AppData\Local\RivalsofAether\workshop\duckgame duck\assistant\.assistant
+2023-08-27 11:20:59.875 | INFO     | __main__:main:142 - Complete
