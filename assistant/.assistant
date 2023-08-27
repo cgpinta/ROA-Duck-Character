@@ -4,4 +4,46 @@ last_updated: 2023-08-27
 injection_clients:
   c:/Users/Christian/AppData/Local/RivalsofAether/workshop/duckgame duck/scripts/attack_update.gml:
   - c:/Users/Christian/AppData/Local/RivalsofAether/workshop/duckgame duck/assistant/.inject/attacks.gml
-script_processed_time: 2023-08-27 11:22:55.834447
+script_processed_time: 2023-08-27 15:21:23.143974
+anim_hashes:
+  idle:
+    idle: 216edd889d36a7e6b6eb612aba444efc
+  walk:
+    walk: babece49b91965113901e72432ef8b5c
+  dash:
+    dash: babece49b91965113901e72432ef8b5c
+  dashstart:
+    dashstart: babece49b91965113901e72432ef8b5c
+  dashstop:
+    dashstop: babece49b91965113901e72432ef8b5c
+  dashturn:
+    dashturn: babece49b91965113901e72432ef8b5c
+  taunt:
+    taunt: 361a062a6545bc78ad9fb974dcdf3b8a
+  doublejump:
+    doublejump: 88e7a0062b3019d334a4af0364f56cfb
+  fair:
+    fair: 6a1d0ceffe24947cf211c470063b419f
+  fstrong:
+    fstrong: d1caa9453e3e0a3cc6a86c021798a239
+  ftilt:
+    ftilt: 6a1d0ceffe24947cf211c470063b419f
+  glide:
+    glide: 0d8035361d2955ca6abbdb5b423a79ca
+  land:
+    land: 216edd889d36a7e6b6eb612aba444efc
+  landinglag:
+    landinglag: 216edd889d36a7e6b6eb612aba444efc
+  pratfall:
+    pratfall: 0d8035361d2955ca6abbdb5b423a79ca
+  crouch:
+    crouch: 8a146221ad8d5b48a7c6f110f5aee5cd
+  dair:
+    dair: 89845675d0abf5b3fe6ea464b5f59c51
+  uair:
+    uair: 41257b212be0299583fac34e455bbd5e
+  utilt:
+    utilt: 41257b212be0299583fac34e455bbd5e
+  uspecial:
+    uspecial: 444ab53350bc73ccef3c2d8e15dce877
+anim_processed_time: 2023-08-27 12:09:40.008452

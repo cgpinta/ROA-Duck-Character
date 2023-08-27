@@ -1,15 +1,15 @@
-sprite_change_offset("idle", 48, 94);
-sprite_change_offset("crouch", 64, 94);
-sprite_change_offset("walk", 46, 94);
-sprite_change_offset("walkturn", 46, 94);
-sprite_change_offset("dash", 46, 94);
-sprite_change_offset("dashstart", 64, 110);
-sprite_change_offset("dashstop", 64, 110);
-sprite_change_offset("dashturn", 68, 110);
+sprite_change_offset("idle", 96, 190);
+sprite_change_offset("crouch", 96, 190);
+sprite_change_offset("walk", 96, 190);
+sprite_change_offset("walkturn", 96, 190);
+sprite_change_offset("dash", 96, 190);
+sprite_change_offset("dashstart", 96, 190);
+sprite_change_offset("dashstop", 96, 190);
+sprite_change_offset("dashturn", 96, 190);
 
-sprite_change_offset("jumpstart", 94, 146);
-sprite_change_offset("jump", 96, 144);
-sprite_change_offset("doublejump", 96, 144);
+sprite_change_offset("jumpstart", 96, 190);
+sprite_change_offset("jump", 96, 190);
+sprite_change_offset("doublejump", 96, 190);
 sprite_change_offset("glide", 96, 144);
 sprite_change_offset("walljump", 96, 144);
 sprite_change_offset("pratfall", 78, 140);
@@ -64,7 +64,7 @@ sprite_change_offset("uspecial_air", 156, 198);
 sprite_change_offset("dspecial", 42, 80);
 sprite_change_offset("dspecial_air", 78, 140);
 
-sprite_change_offset("taunt", 54, 94);
+sprite_change_offset("taunt", 96, 190);
 
 sprite_change_offset("plat", 92, 16);
 
