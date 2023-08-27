@@ -1,7 +1,8 @@
 //update
 
-if (!free || state == PS_WALL_JUMP){
-    move_cooldown[AT_USPECIAL] = 0;
+if (state == PS_WALK && down_down || state == PS_CROUCH && left_down || state == PS_CROUCH && right_down){
+    
+    set_window_value( attack/real, window/real, index/real, value/real )
 }
 
 with (asset_get("oPlayer")){
