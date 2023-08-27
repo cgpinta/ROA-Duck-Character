@@ -36,7 +36,7 @@ jump_change = 3; //maximum hsp when double jumping. If already going faster, it 
 air_accel = .3;
 prat_fall_accel = 1; //multiplier of air_accel while in pratfall
 air_friction = .03;
-max_djumps = 1;
+max_djumps = 2;
 double_jump_time = 32; //the number of frames to play the djump animation. Can't be less than 31.
 walljump_hsp = 7;
 walljump_vsp = 11;
@@ -48,7 +48,7 @@ gravity_speed = .65;
 hitstun_grav = .525;
 knockback_adj = 0.8; //the multiplier to KB dealt to you. 1 = default, >1 = lighter, <1 = heavier
 
-land_time = 4; //normal landing frames
+land_time = 0; //normal landing frames
 prat_land_time = 20;
 wave_land_time = 8;
 wave_land_adj = 1.35; //the multiplier to your initial hsp when wavelanding. Usually greater than 1
@@ -62,7 +62,7 @@ crouch_recovery_frames = 1;
 //parry animation frames
 dodge_startup_frames = 1;
 dodge_active_frames = 1;
-dodge_recovery_frames = 4;
+dodge_recovery_frames = 0;
 
 //tech animation frames
 tech_active_frames = 3;
@@ -77,16 +77,16 @@ techroll_speed = 10;
 //airdodge animation frames
 air_dodge_startup_frames = 1;
 air_dodge_active_frames = 3;
-air_dodge_recovery_frames = 3;
+air_dodge_recovery_frames = 0;
 air_dodge_speed = 20;
 
 //roll animation frames
-roll_forward_startup_frames = 2;
+roll_forward_startup_frames = 0;
 roll_forward_active_frames = 2;
-roll_forward_recovery_frames = 2;
+roll_forward_recovery_frames = 0;
 roll_back_startup_frames = 2;
 roll_back_active_frames = 2;
-roll_back_recovery_frames = 2;
+roll_back_recovery_frames = 0;
 roll_forward_max = 9; //roll speed
 roll_backward_max = 9;
 

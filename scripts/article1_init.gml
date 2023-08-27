@@ -1,7 +1,7 @@
 //article1_init
 
 init = 0;
-sprite_index = sprite_get("bamboo_stalk");
+sprite_index = sprite_get("banana");
 
 state = 0;
 state_timer = 0;

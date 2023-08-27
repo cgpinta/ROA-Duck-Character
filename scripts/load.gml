@@ -13,8 +13,8 @@ sprite_change_offset("doublejump", 96, 190);
 sprite_change_offset("glide", 96, 144);
 sprite_change_offset("walljump", 96, 144);
 sprite_change_offset("pratfall", 78, 140);
-sprite_change_offset("land", 94, 146);
-sprite_change_offset("landinglag", 94, 146);
+sprite_change_offset("land", 96, 190);
+sprite_change_offset("landinglag", 96, 190);
 
 sprite_change_offset("parry", 48, 94);
 sprite_change_offset("roll_forward", 46, 94);
@@ -40,29 +40,25 @@ sprite_change_offset("bouncehurt", 64, 110);
 sprite_change_offset("spinhurt", 64, 110);
 //TILTS
 sprite_change_offset("jab", 74, 104);
-sprite_change_offset("dattack", 48, 94);
-sprite_change_offset("ftilt", 48, 94);
-sprite_change_offset("dtilt", 48, 90);
-sprite_change_offset("utilt", 64, 126);
+sprite_change_offset("dattack", 96, 190);
+sprite_change_offset("ftilt", 96, 190);
+sprite_change_offset("dtilt", 96, 190);
+sprite_change_offset("utilt", 96, 190);
 //AERIALS
-sprite_change_offset("nair", 64, 87);
-sprite_change_offset("fair", 64, 112);
-sprite_change_offset("bair", 96, 144);
-sprite_change_offset("uair", 64, 112);
-sprite_change_offset("dair", 64, 102);
+sprite_change_offset("nair", 96, 190);
+sprite_change_offset("fair", 96, 190);
+sprite_change_offset("bair", 96, 190);
+sprite_change_offset("uair", 96, 190);
+sprite_change_offset("dair", 96, 186);
 //SMASH
 sprite_change_offset("fstrong", 64, 104);
 sprite_change_offset("ustrong", 92, 230);
 sprite_change_offset("dstrong",92, 102);
 //SPECIALS
 sprite_change_offset("nspecial", 46, 104);
-sprite_change_offset("nspecial_air", 78, 140);
 sprite_change_offset("fspecial", 74, 104);
-sprite_change_offset("fspecial_air", 78, 140);
-sprite_change_offset("uspecial", 156, 198);
-sprite_change_offset("uspecial_air", 156, 198);
+sprite_change_offset("uspecial", 96, 190);
 sprite_change_offset("dspecial", 42, 80);
-sprite_change_offset("dspecial_air", 78, 140);
 
 sprite_change_offset("taunt", 96, 190);
 
