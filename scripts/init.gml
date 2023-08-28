@@ -13,10 +13,10 @@ dash_anim_speed = .25;
 pratfall_anim_speed = .25;
 
 walk_speed = 4.5;
-walk_accel = .2;
+walk_accel = .1;
 walk_turn_time = 6;
 initial_dash_time = 10;
-initial_dash_speed = 6.5;
+initial_dash_speed = 6;
 dash_speed = 6;
 dash_turn_time = 10;
 dash_turn_accel = 2;
@@ -78,7 +78,7 @@ techroll_speed = 10;
 air_dodge_startup_frames = 1;
 air_dodge_active_frames = 3;
 air_dodge_recovery_frames = 0;
-air_dodge_speed = 20;
+air_dodge_speed = 10;
 
 //roll animation frames
 roll_forward_startup_frames = 0;

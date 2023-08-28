@@ -2,7 +2,7 @@ assistant_version: 1.3.1
 library_version: 1.0.3
 last_updated: 2023-08-27
 injection_clients: {}
-script_processed_time: 2023-08-27 18:14:16.095525
+script_processed_time: 2023-08-27 19:20:31.353506
 anim_hashes:
   idle:
     idle: 216edd889d36a7e6b6eb612aba444efc
@@ -31,9 +31,9 @@ anim_hashes:
   land:
     land: ecc1dedca0eb41ae9508ef0923098af8
   landinglag:
-    landinglag: 216edd889d36a7e6b6eb612aba444efc
+    landinglag: ecc1dedca0eb41ae9508ef0923098af8
   pratfall:
-    pratfall: 0d8035361d2955ca6abbdb5b423a79ca
+    pratfall: f2b45ad0e028925c588683c4580f79a3
   crouch:
     crouch: 8a146221ad8d5b48a7c6f110f5aee5cd
   dair:
@@ -54,4 +54,46 @@ anim_hashes:
     dattack: 6a1d0ceffe24947cf211c470063b419f
   dtilt:
     dtilt: 3a9425f0124a94b6770ff369b4fd4248
-anim_processed_time: 2023-08-27 18:03:00.244190
+  swim:
+    swim: e7f1a8dec155306824f9e89cdce8bd83
+  hurt:
+    hurt: 942dca4a9328a5a2b07957d8a712762e
+  bighurt:
+    bighurt: 942dca4a9328a5a2b07957d8a712762e
+  bouncehurt:
+    bouncehurt: 942dca4a9328a5a2b07957d8a712762e
+  downhurt:
+    downhurt: 942dca4a9328a5a2b07957d8a712762e
+  hurtgrouind:
+    hurtgrouind: 942dca4a9328a5a2b07957d8a712762e
+  hurtground:
+    hurtground: 942dca4a9328a5a2b07957d8a712762e
+  spinhurt:
+    spinhurt: 942dca4a9328a5a2b07957d8a712762e
+  uphurt:
+    uphurt: 942dca4a9328a5a2b07957d8a712762e
+  airdodge:
+    airdodge: a271e689e96e1137045a46568753d9f1
+  parry:
+    parry: a271e689e96e1137045a46568753d9f1
+  roll_backward:
+    roll_backward: a271e689e96e1137045a46568753d9f1
+  roll_forward:
+    roll_forward: a271e689e96e1137045a46568753d9f1
+  shield:
+    shield: a271e689e96e1137045a46568753d9f1
+  tech:
+    tech: a271e689e96e1137045a46568753d9f1
+  airdodge_downback:
+    airdodge_downback: e7f1a8dec155306824f9e89cdce8bd83
+  airdodge_downforward:
+    airdodge_downforward: e7f1a8dec155306824f9e89cdce8bd83
+  airdodge_upback:
+    airdodge_upback: a271e689e96e1137045a46568753d9f1
+  airdodge_upforward:
+    airdodge_upforward: a271e689e96e1137045a46568753d9f1
+  waveland:
+    waveland: e7f1a8dec155306824f9e89cdce8bd83
+  walkturn:
+    walkturn: 2db99b315459b83647cda27fcaee3e2d
+anim_processed_time: 2023-08-27 18:52:31.059739
