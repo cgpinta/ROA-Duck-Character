@@ -2,14 +2,14 @@ assistant_version: 1.3.1
 library_version: 1.0.3
 last_updated: 2023-08-27
 injection_clients: {}
-script_processed_time: 2023-08-27 21:39:52.475639
+script_processed_time: 2023-08-27 22:24:40.945441
 anim_hashes:
   idle:
     idle: 216edd889d36a7e6b6eb612aba444efc
   walk:
     walk: babece49b91965113901e72432ef8b5c
   dash:
-    dash: babece49b91965113901e72432ef8b5c
+    dash: fbab923315d6606c32ae9ee87338ede7
   dashstart:
     dashstart: 2db99b315459b83647cda27fcaee3e2d
   dashstop:
@@ -23,7 +23,7 @@ anim_hashes:
   fair:
     fair: 6a1d0ceffe24947cf211c470063b419f
   fstrong:
-    fstrong: b6f8ba04972ddaa6fcf399baee0d6456
+    fstrong: 6e4c1dd3271177b4e2a3f489f91308a9
   ftilt:
     ftilt: 6a1d0ceffe24947cf211c470063b419f
   glide:
@@ -43,7 +43,7 @@ anim_hashes:
   utilt:
     utilt: 41257b212be0299583fac34e455bbd5e
   uspecial:
-    uspecial: 444ab53350bc73ccef3c2d8e15dce877
+    uspecial: 6410e9c0929bce8c8112585e95a4508b
   crouchwalk:
     crouchwalk: 0834ab34ddaddbbe53dd53a1867d8156
   jump:
@@ -98,4 +98,4 @@ anim_hashes:
     walkturn: 2db99b315459b83647cda27fcaee3e2d
   walljump:
     walljump: 88e7a0062b3019d334a4af0364f56cfb
-anim_processed_time: 2023-08-27 21:42:43.917441
+anim_processed_time: 2023-08-27 22:02:30.097210

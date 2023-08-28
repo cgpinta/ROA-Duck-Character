@@ -67,6 +67,9 @@ sprite_change_offset("plat", 92, 16);
 sprite_change_offset("mag_blast", 78, 6);
 sprite_change_offset("banana", 12, 16);
 
+
+sprite_change_offset("hurtbox", 96, 190);
+
 sprite_change_offset("hfx_wood_small", 80, 80);
 sprite_change_offset("hfx_wood_large", 128, 128);
 sprite_change_offset("hfx_wood_xlarge", 256, 256);

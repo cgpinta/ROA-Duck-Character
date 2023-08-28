@@ -36,12 +36,12 @@ set_hitbox_value(AT_USPECIAL, 1, HG_HITPAUSE_SCALING, .35);
 set_hitbox_value(AT_USPECIAL, 1, HG_HIT_SFX, asset_get("sfx_blow_weak2"));
 set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_SPRITE, sprite_get("bread"));
 set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_MASK, sprite_get("bread"));
-set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_HSPEED, .9);
+set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_HSPEED, 2);
 set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_VSPEED, -10);
 set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_GRAVITY, .5);
 set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_IS_TRANSCENDENT, false);
-set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_WALL_BEHAVIOR, 2);
-set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_GROUND_BEHAVIOR, 2);
+set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_WALL_BEHAVIOR, 1);
+set_hitbox_value(AT_USPECIAL, 1, HG_PROJECTILE_GROUND_BEHAVIOR, 1);
 
 set_hitbox_value(AT_USPECIAL, 2, HG_HITBOX_TYPE, 1);
 set_hitbox_value(AT_USPECIAL, 2, HG_WINDOW, 2);

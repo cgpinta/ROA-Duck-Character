@@ -1,10 +1,10 @@
-hurtbox_spr = asset_get("ex_guy_hurt_box");
-crouchbox_spr = asset_get("ex_guy_crouch_box");
+hurtbox_spr = sprite_get("hurtbox");
+crouchbox_spr = asset_get("gus_crouchbox");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 
 
-char_height = 30;
+char_height = 16;
 idle_anim_speed = .1;
 crouch_anim_speed = .1;
 walk_anim_speed = .1;
@@ -89,12 +89,12 @@ roll_back_recovery_frames = 0;
 roll_forward_max = 9; //roll speed
 roll_backward_max = 9;
 
-land_sound = asset_get("sfx_land_light");
-landing_lag_sound = asset_get("sfx_land_light");
-waveland_sound = asset_get("sfx_waveland_syl");
-jump_sound = asset_get("sfx_jumpground");
-djump_sound = asset_get("sfx_jumpair");
-air_dodge_sound = asset_get("sfx_quick_dodge");
+// land_sound = asset_get("sfx_land_light");
+// landing_lag_sound = asset_get("sfx_land_light");
+// waveland_sound = asset_get("sfx_waveland_syl");
+// jump_sound = asset_get("sfx_jumpground");
+// djump_sound = asset_get("sfx_jumpair");
+// air_dodge_sound = asset_get("sfx_quick_dodge");
 
 //visual offsets for when you're in Ranno's bubble
 bubble_x = 0;

@@ -1,13 +1,13 @@
 //update
 
-if (state == PS_WALK && down_down || state == PS_CROUCH && right_down || state == PS_CROUCH && left_down){
-    state = PS_WALK;
-    hsp = walk_speed *spr_dir;
-
+if (state == PS_CROUCH){
     sprite_index = sprite_get( "crouch" );
-    //image_index = floor(image_number*state_timer/(image_number*6.5));
-
-    
+    if(right_down){
+        hsp = walk_speed * 1;
+    }
+    if(left_down){
+        hsp = walk_speed * -1;
+    }
 }
 //print_debug("img index" + string(sprite_index));
 
