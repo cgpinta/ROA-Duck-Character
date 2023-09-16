@@ -14,12 +14,12 @@ pratfall_anim_speed = .25;
 walk_speed = 4.5;
 walk_accel = .1;
 walk_turn_time = 6;
-initial_dash_time = 10;
-initial_dash_speed = 6;
-dash_speed = 6;
-dash_turn_time = 10;
+initial_dash_time = 0;
+initial_dash_speed = 0;
+dash_speed = 0;
+dash_turn_time = 100000;
 dash_turn_accel = 2;
-dash_stop_time = 4;
+dash_stop_time = 100000;
 dash_stop_percent = .35; //the value to multiply your hsp by when going into idle from dash or dashstop
 ground_friction = .6;
 moonwalk_accel = 1.4;
@@ -99,3 +99,14 @@ roll_backward_max = 9;
 //visual offsets for when you're in Ranno's bubble
 bubble_x = 0;
 bubble_y = 8;
+
+
+custom_speed = 0;
+old_custom_speed = 0;
+fly_accel = .25;
+max_fly_speed = 6;
+
+
+crouchwalk = false;
+crouchwalk_animation = sprite_get("crouchwalk")
+crouchwalk_animation = 10
