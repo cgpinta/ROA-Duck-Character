@@ -11,7 +11,6 @@ set_window_value(AT_NAIR, 1, AG_WINDOW_HSPEED_TYPE, 0);
 set_window_value(AT_NAIR, 2, AG_WINDOW_LENGTH, 6);
 set_window_value(AT_NAIR, 2, AG_WINDOW_ANIM_FRAMES, 1);
 set_window_value(AT_NAIR, 2, AG_WINDOW_ANIM_FRAME_START, 1);
-set_window_value(AT_NAIR, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_weak1"));
 set_window_value(AT_NAIR, 2, AG_WINDOW_HSPEED_TYPE, 0);
 
 set_window_value(AT_NAIR, 3, AG_WINDOW_LENGTH, 14);
@@ -37,7 +36,6 @@ set_hitbox_value(AT_NAIR, 1, HG_KNOCKBACK_SCALING, .55);
 set_hitbox_value(AT_NAIR, 1, HG_BASE_HITPAUSE, 6);
 set_hitbox_value(AT_NAIR, 1, HG_HITPAUSE_SCALING, .6);
 set_hitbox_value(AT_NAIR, 1, HG_VISUAL_EFFECT_X_OFFSET, 16);
-set_hitbox_value(AT_NAIR, 1, HG_HIT_SFX, asset_get("sfx_blow_weak2"));
 
 
 /*hitbox values vs brawl

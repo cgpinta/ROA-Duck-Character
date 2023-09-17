@@ -1,5 +1,5 @@
 hurtbox_spr = sprite_get("hurtbox");
-crouchbox_spr = asset_get("gus_crouchbox");
+crouchbox_spr = sprite_get("crouch_hurt");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 
@@ -14,20 +14,20 @@ pratfall_anim_speed = .25;
 walk_speed = 4.5;
 walk_accel = .1;
 walk_turn_time = 6;
-initial_dash_time = 10;
-initial_dash_speed = 6;
-dash_speed = 6;
-dash_turn_time = 10;
+initial_dash_time = 0;
+initial_dash_speed = 0;
+dash_speed = 0;
+dash_turn_time = 100000;
 dash_turn_accel = 2;
-dash_stop_time = 4;
+dash_stop_time = 100000;
 dash_stop_percent = .35; //the value to multiply your hsp by when going into idle from dash or dashstop
 ground_friction = .6;
 moonwalk_accel = 1.4;
 
 jump_start_time = 5;
-jump_speed = 13;
-short_hop_speed = 8;
-djump_speed = 12;
+jump_speed = 8;
+short_hop_speed = 6;
+djump_speed = 8;
 leave_ground_max = 6; //the maximum hsp you can have when you go from grounded to aerial without jumping
 max_jump_hsp = 6; //the maximum hsp you can have when jumping from the ground
 air_max_speed = 6; //the maximum hsp you can accelerate to when in a normal aerial state
@@ -41,9 +41,9 @@ walljump_hsp = 7;
 walljump_vsp = 11;
 walljump_time = 32;
 wall_frames = 2; //anim frames before you leave the wall
-max_fall = 13; //maximum fall speed without fastfalling
+max_fall = 8; //maximum fall speed without fastfalling
 fast_fall = 16; //fast fall speed
-gravity_speed = .65;
+gravity_speed = .4;
 hitstun_grav = .525;
 knockback_adj = 0.8; //the multiplier to KB dealt to you. 1 = default, >1 = lighter, <1 = heavier
 
@@ -99,3 +99,27 @@ roll_backward_max = 9;
 //visual offsets for when you're in Ranno's bubble
 bubble_x = 0;
 bubble_y = 8;
+
+
+
+
+//CUSTOM VARIABLES
+custom_speed = 0;
+old_custom_speed = 0;
+walk_deccel = .96;
+
+
+fly_accel = .25;
+max_fly_speed = 6;
+fly_deccel = .99;
+
+crouchwalk = false;
+crouchwalk_animation = sprite_get("crouchwalk")
+crouchwalk_duration = 10
+
+swim_speed = walk_speed*2.5;
+
+swim_count = 1;
+swum = false;
+
+playHitSound = true;
