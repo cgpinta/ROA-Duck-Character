@@ -77,9 +77,7 @@ if(state == PS_DASH_STOP){
     state = PS_IDLE;
 }
 
-if(inputDir != 0){
-    spr_dir = inputDir;
-}
+
 
 
 if (state == PS_CROUCH){
@@ -94,12 +92,23 @@ if (state == PS_IDLE_AIR){
     }
 }
 
-if(hitpause && !old_hitpause){
-    preHitPauseSpeed = custom_speed;
-    custom_speed = 0;
+if(hitpause){
+    if(!old_hitpause){
+        preHitPauseSpeed = custom_speed;
+    }
+    else{
+        custom_speed = 0;
+    }
+
+
+    if(inputDir != 0){
+        spr_dir = inputDir;
+    }
 }
-else if(!hitpause && old_hitpause){
-    custom_speed = preHitPauseSpeed;
+else if(!hitpause){
+    if(old_hitpause){
+        custom_speed = preHitPauseSpeed;
+    }
 }
 
 

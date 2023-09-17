@@ -32,6 +32,15 @@ if(attack == AT_DAIR || attack == AT_UAIR){
     }
 }
 
+if(attack == AT_BAIR){
+    if(!free){
+        state = PS_LAND;
+    }
+    else{
+        set_attack(AT_FAIR);
+    }
+}
+
 if(attack == AT_FSPECIAL && swimming == false){
     swimming = true;
     if(swim_count > 0){
