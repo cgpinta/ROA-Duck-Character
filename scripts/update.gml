@@ -17,7 +17,7 @@ else{
 
 
 
-
+//print_debug(string(get_gameplay_time())+"state:" +string(get_state_name( state )))
 
 
 if(!free){  //if grounded
@@ -26,12 +26,12 @@ if(!free){  //if grounded
     if(inputDir != 0){
         if(abs(custom_speed) < walk_speed){
             custom_speed += walk_accel*inputDir;
-            print_debug(string(get_gameplay_time())+": accelerating ground1:"+string(custom_speed)+" max:"+string(walk_speed*inputDir)+" accel:"+string(walk_accel));
+            //print_debug(string(get_gameplay_time())+": accelerating ground1:"+string(custom_speed)+" max:"+string(walk_speed*inputDir)+" accel:"+string(walk_accel));
         }
         else{
             
             custom_speed = walk_deccel*custom_speed;
-            print_debug(string(get_gameplay_time())+": accelerating ground2:"+string(custom_speed)+" max:"+string(walk_speed*inputDir)+" accel:"+string(walk_accel));
+            //print_debug(string(get_gameplay_time())+": accelerating ground2:"+string(custom_speed)+" max:"+string(walk_speed*inputDir)+" accel:"+string(walk_accel));
         
         }
     }
@@ -49,7 +49,7 @@ else{
     if(inputDir != 0){
         if(abs(custom_speed) < max_fly_speed){
             custom_speed += fly_accel*inputDir;
-            print_debug(string(get_gameplay_time())+": accelerating ground1:"+string(custom_speed)+" max:"+string(max_fly_speed*inputDir)+" accel:"+string(fly_accel));
+            //rint_debug(string(get_gameplay_time())+": accelerating ground1:"+string(custom_speed)+" max:"+string(max_fly_speed*inputDir)+" accel:"+string(fly_accel));
         
         }
         else{
@@ -72,6 +72,9 @@ if(floor(old_custom_speed) != floor(custom_speed)){
 
 if(state == PS_DASH_TURN){
     state = PS_WALK;
+}
+if(state == PS_DASH_STOP){
+    state = PS_IDLE;
 }
 
 if(inputDir != 0){

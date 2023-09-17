@@ -4,11 +4,7 @@
 hsp = custom_speed
 
 
-if(attack == AT_DAIR || attack == AT_UAIR){
-    if(!free){
-        state = PS_LAND;
-    }
-}
+
 
 if(attack == AT_DSPECIAL){
     sprite_index = sprite_get('idle');
@@ -22,8 +18,15 @@ if(attack == AT_DSPECIAL){
     }
 }
 
-if(attack == AT_NAIR || attack == AT_BAIR || attack == AT_FAIR || AT_JAB){
-    attack = AT_FTILT;
+// if(attack == AT_NAIR || attack == AT_BAIR || attack == AT_FAIR || AT_JAB){
+//     attack = AT_FTILT;
+//     print_debug(string(get_gameplay_time())+": attack set to FAIR");
+// }
+
+if(attack == AT_DAIR || attack == AT_UAIR){
+    if(!free){
+        state = PS_LAND;
+    }
 }
 
 if(attack == AT_FSPECIAL && special_pressed){
@@ -35,7 +38,7 @@ if(attack == AT_FSPECIAL && special_pressed){
     }
     else{
         swim_count = 0;
-        attack_end();
+        state = PS_IDLE;
         print_debug(string(get_gameplay_time())+": swim special failed");
     }
 }
@@ -43,9 +46,10 @@ if(attack == AT_FSPECIAL && special_pressed){
 
 if(has_hit_player){
     if(playHitSound){
-        sound = "hit0"+string(random_func(1,4,true));
+        rand = random_func(0,4,true) + 1;
+        sound = "hit0"+string(rand);
         print_debug( sound );
-        sound_play(sound_get("hit01"));
+        sound_play(sound_get(sound));
         playHitSound = false;
     }
 }

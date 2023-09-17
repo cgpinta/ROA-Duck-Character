@@ -1,5 +1,5 @@
 hurtbox_spr = sprite_get("hurtbox");
-crouchbox_spr = asset_get("gus_crouchbox");
+crouchbox_spr = sprite_get("crouch_hurt");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
 

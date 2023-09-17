@@ -36,7 +36,6 @@ set_hitbox_value(AT_FTILT, 1, HG_KNOCKBACK_SCALING, .55);
 set_hitbox_value(AT_FTILT, 1, HG_BASE_HITPAUSE, 6);
 set_hitbox_value(AT_FTILT, 1, HG_HITPAUSE_SCALING, .6);
 set_hitbox_value(AT_FTILT, 1, HG_VISUAL_EFFECT_X_OFFSET, 16);
-set_hitbox_value(AT_FTILT, 1, HG_HIT_SFX, asset_get("hit01"));
 
 
 /*hitbox values vs brawl
