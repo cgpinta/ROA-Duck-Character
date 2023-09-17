@@ -123,7 +123,7 @@ else if(!hitpause){
     if(old_hitpause){
         custom_speed = preHitPauseSpeed;
     }
-    if(inputDir != 0){
+    if(inputDir != 0 && state != PS_SPAWN){
         spr_dir = inputDir;
     }
 }
