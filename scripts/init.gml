@@ -118,9 +118,8 @@ crouchwalk_animation = sprite_get("crouchwalk")
 crouchwalk_duration = 10
 
 swim_speed = walk_speed*2.5;
-
 swim_count = 1;
-swum = false;
+swimming = false;
 
 playHitSound = true;
 

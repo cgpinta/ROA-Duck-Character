@@ -87,7 +87,7 @@ if (state == PS_CROUCH){
 }
 //print_debug("img index" + string(sprite_index));
 
-if (PS_IDLE_AIR){
+if (state == PS_IDLE_AIR){
     if (free && jump_down){
         sprite_index = sprite_get( "glide" );
         
@@ -102,7 +102,16 @@ else if(!hitpause && old_hitpause){
     custom_speed = preHitPauseSpeed;
 }
 
+
+
+
+
+
 hsp = custom_speed;
 
 old_custom_speed = custom_speed;
 old_hitpause = hitpause;
+
+if(swimming && !(state == PS_ATTACK_AIR || state == PS_ATTACK_GROUND)){
+    swimming = false;
+}

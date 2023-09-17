@@ -1,9 +1,12 @@
-
+//called before update.gml when attacking
 
 
 hsp = custom_speed
 
-
+if(attack == AT_NSPECIAL){
+    sprite_index = sprite_get('idle');
+    state = PS_IDLE;
+}
 
 
 if(attack == AT_DSPECIAL){
@@ -29,17 +32,18 @@ if(attack == AT_DAIR || attack == AT_UAIR){
     }
 }
 
-if(attack == AT_FSPECIAL && special_pressed){
-
+if(attack == AT_FSPECIAL && swimming == false){
+    swimming = true;
     if(swim_count > 0){
         custom_speed = swim_speed*spr_dir
         print_debug(string(get_gameplay_time())+": swim special");
         swim_count--;
+        set_attack(AT_FSPECIAL_2);
     }
     else{
         swim_count = 0;
         state = PS_IDLE;
-        print_debug(string(get_gameplay_time())+": swim special failed");
+        sprite_index = sprite_get('idle');
     }
 }
 
