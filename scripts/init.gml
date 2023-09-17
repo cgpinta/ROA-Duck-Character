@@ -68,33 +68,33 @@ tech_active_frames = 3;
 tech_recovery_frames = 1;
 
 //tech roll animation frames
-techroll_startup_frames = 2
-techroll_active_frames = 2;
-techroll_recovery_frames = 2;
-techroll_speed = 10;
+techroll_startup_frames = 0;
+techroll_active_frames = 0;
+techroll_recovery_frames = 0;
+techroll_speed = 0;
 
 //airdodge animation frames
-air_dodge_startup_frames = 1;
-air_dodge_active_frames = 3;
+air_dodge_startup_frames = 0;
+air_dodge_active_frames = 1;
 air_dodge_recovery_frames = 0;
-air_dodge_speed = 10;
+air_dodge_speed = 0;
 
 //roll animation frames
 roll_forward_startup_frames = 0;
-roll_forward_active_frames = 2;
+roll_forward_active_frames = 0;
 roll_forward_recovery_frames = 0;
-roll_back_startup_frames = 2;
-roll_back_active_frames = 2;
+roll_back_startup_frames = 0;
+roll_back_active_frames = 0;
 roll_back_recovery_frames = 0;
-roll_forward_max = 9; //roll speed
-roll_backward_max = 9;
+roll_forward_max = 0; //roll speed
+roll_backward_max = 0;
 
-// land_sound = asset_get("sfx_land_light");
-// landing_lag_sound = asset_get("sfx_land_light");
-// waveland_sound = asset_get("sfx_waveland_syl");
-// jump_sound = asset_get("sfx_jumpground");
-// djump_sound = asset_get("sfx_jumpair");
-// air_dodge_sound = asset_get("sfx_quick_dodge");
+land_sound = asset_get("");
+landing_lag_sound = asset_get("");
+waveland_sound = asset_get("");
+jump_sound = asset_get("");
+djump_sound = sound_get("whoosh");
+air_dodge_sound = asset_get("");
 
 //visual offsets for when you're in Ranno's bubble
 bubble_x = 0;
@@ -105,6 +105,7 @@ bubble_y = 8;
 
 //CUSTOM VARIABLES
 custom_speed = 0;
+custom_yspeed = 0;
 old_custom_speed = 0;
 walk_deccel = .96;
 
@@ -127,3 +128,12 @@ playHitSound = true;
 
 old_hitpause = false;
 preHitPauseSpeed = 0;
+
+
+old_state = PS_IDLE;
+old_vvsp = 0;
+
+justjumped = false;
+
+preAirDodgeXSpeed = 0;
+preAirDodgeYSpeed = 0;

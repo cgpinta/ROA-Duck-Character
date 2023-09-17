@@ -16,11 +16,16 @@ else{
 }
 
 
+if(state == PS_ROLL_BACKWARD || state == PS_ROLL_FORWARD){
+    sound_stop(asset_get( "sfx_roll" ));
+    state = PS_PARRY;
+}
 
-//print_debug(string(get_gameplay_time())+"state:" +string(get_state_name( state )))
+
 
 
 if(!free){  //if grounded
+    custom_yspeed = 0;
     swim_count = 1;
 
     if(inputDir != 0){
@@ -102,13 +107,14 @@ if(hitpause){
 
     custom_speed = 0;
 
-    if(inputDir != 0){
-        spr_dir = inputDir;
-    }
+    
 }
 else if(!hitpause){
     if(old_hitpause){
         custom_speed = preHitPauseSpeed;
+    }
+    if(inputDir != 0){
+        spr_dir = inputDir;
     }
 }
 
@@ -118,12 +124,26 @@ else if(!hitpause){
 if(state == PS_SPAWN){
     custom_speed = 0;
 }
-
-hsp = custom_speed;
-
-old_custom_speed = custom_speed;
-old_hitpause = hitpause;
-
 if(swimming && !(state == PS_ATTACK_AIR || state == PS_ATTACK_GROUND)){
     swimming = false;
 }
+
+if(state == PS_AIR_DODGE){
+    if(old_state != PS_AIR_DODGE){
+        preAirDodgeYSpeed = old_vvsp + gravity_speed;
+        vsp = preAirDodgeYSpeed;
+    }
+    else{
+        vsp = preAirDodgeYSpeed;
+    }
+    state = PS_IDLE_AIR;
+}
+
+
+custom_yspeed -= gravity_speed; 
+
+hsp = custom_speed;
+old_custom_speed = custom_speed;
+old_vvsp = vsp;
+old_hitpause = hitpause;
+old_state = state;
