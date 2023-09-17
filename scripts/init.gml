@@ -108,6 +108,7 @@ custom_speed = 0;
 old_custom_speed = 0;
 walk_deccel = .96;
 
+inputDir = 0;
 
 fly_accel = .25;
 max_fly_speed = 6;
@@ -115,7 +116,8 @@ fly_deccel = .99;
 
 crouchwalk = false;
 crouchwalk_animation = sprite_get("crouchwalk")
-crouchwalk_duration = 10
+crouchwalk_minAnimSpeed = 5;
+crouchwalk_maxAnimSpeed = 15;
 
 swim_speed = walk_speed*2.5;
 swim_count = 1;

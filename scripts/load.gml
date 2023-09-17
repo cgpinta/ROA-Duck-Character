@@ -1,5 +1,6 @@
 sprite_change_offset("idle", 96, 190);
 sprite_change_offset("crouch", 96, 190);
+sprite_change_offset("crouchwalk",96, 190);
 sprite_change_offset("walk", 96, 190);
 sprite_change_offset("walkturn", 96, 190);
 sprite_change_offset("dash", 96, 190);
@@ -55,7 +56,7 @@ sprite_change_offset("fstrong", 96, 190);
 sprite_change_offset("ustrong", 96, 190);
 sprite_change_offset("dstrong",96, 190);
 //SPECIALS
-sprite_change_offset("nspecial", 46, 104);
+sprite_change_offset("nspecial", 96, 190);
 sprite_change_offset("swim", 96, 190);
 sprite_change_offset("uspecial", 96, 190);
 sprite_change_offset("dspecial", 42, 80);
@@ -63,9 +64,6 @@ sprite_change_offset("dspecial", 42, 80);
 sprite_change_offset("taunt", 96, 190);
 
 sprite_change_offset("plat", 92, 16);
-
-sprite_change_offset("mag_blast", 78, 6);
-sprite_change_offset("banana", 12, 16);
 
 
 sprite_change_offset("hurtbox", 96, 190);

@@ -79,9 +79,12 @@ if(state == PS_DASH_STOP){
 
 
 
-
+crouchwalk = false;
 if (state == PS_CROUCH){
     sprite_index = sprite_get( "crouch" );
+    if(custom_speed != 0){
+        crouchwalk = true;
+    }
 }
 //print_debug("img index" + string(sprite_index));
 
@@ -96,10 +99,8 @@ if(hitpause){
     if(!old_hitpause){
         preHitPauseSpeed = custom_speed;
     }
-    else{
-        custom_speed = 0;
-    }
 
+    custom_speed = 0;
 
     if(inputDir != 0){
         spr_dir = inputDir;
@@ -114,7 +115,9 @@ else if(!hitpause){
 
 
 
-
+if(state == PS_SPAWN){
+    custom_speed = 0;
+}
 
 hsp = custom_speed;
 

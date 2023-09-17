@@ -37,6 +37,7 @@ if(attack == AT_BAIR){
         state = PS_LAND;
     }
     else{
+        spr_dir = -1;
         set_attack(AT_FAIR);
     }
 }
@@ -61,7 +62,6 @@ if(has_hit_player){
     if(playHitSound){
         rand = random_func(0,4,true) + 1;
         sound = "hit0"+string(rand);
-        print_debug( sound );
         sound_play(sound_get(sound));
         playHitSound = false;
     }
