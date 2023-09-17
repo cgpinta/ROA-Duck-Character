@@ -94,6 +94,15 @@ if (PS_IDLE_AIR){
     }
 }
 
+if(hitpause && !old_hitpause){
+    preHitPauseSpeed = custom_speed;
+    custom_speed = 0;
+}
+else if(!hitpause && old_hitpause){
+    custom_speed = preHitPauseSpeed;
+}
 
 hsp = custom_speed;
+
 old_custom_speed = custom_speed;
+old_hitpause = hitpause;

@@ -123,3 +123,6 @@ swim_count = 1;
 swum = false;
 
 playHitSound = true;
+
+old_hitpause = false;
+preHitPauseSpeed = 0;
