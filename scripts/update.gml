@@ -18,9 +18,19 @@ else{
 
 if(state == PS_ROLL_BACKWARD || state == PS_ROLL_FORWARD){
     sound_stop(asset_get( "sfx_roll" ));
-    state = PS_PARRY;
+    parrylagframes = 60;
+    if(currentparrylag == 0){
+        state = PS_PARRY;
+        currentparrylag = parrylagframes;
+    }
+    else{
+        state = PS_IDLE;
+    }
 }
 
+if(currentparrylag > 0){
+    currentparrylag -= 1;
+}
 
 
 
@@ -121,7 +131,7 @@ else if(!hitpause){
 
 
 
-if(state == PS_SPAWN){
+if(state == PS_SPAWN || state == PS_PARRY || state == PS_PARRY_START){
     custom_speed = 0;
 }
 if(swimming && !(state == PS_ATTACK_AIR || state == PS_ATTACK_GROUND)){

@@ -137,3 +137,7 @@ justjumped = false;
 
 preAirDodgeXSpeed = 0;
 preAirDodgeYSpeed = 0;
+
+
+parrylagframes = 60;
+currentparrylag = 0;
